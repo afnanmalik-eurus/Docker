@@ -1,0 +1,8 @@
+depends_on: control order in which service are started but not when they are ready 
+
+entrypoint: add explicit delay in the container start command 
+entrypoint: ["sh", "-c", "sleep 10 && your-start-command"]
+
+wai-for-it script 
+
+

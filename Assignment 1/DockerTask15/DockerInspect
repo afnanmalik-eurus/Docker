@@ -1,0 +1,2 @@
+docker inspect -f '{{.Name}} - Exit Code: {{.State.ExitCode}}' $(docker ps -aq)
+

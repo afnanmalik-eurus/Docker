@@ -1,0 +1,1 @@
+{"schemaVersion":2,"mediaType":"application/vnd.oci.image.index.v1+json","manifests":[{"mediaType":"application/vnd.oci.image.manifest.v1+json","digest":"sha256:293baa240c37f3f57eee5d29d867e8ffa0f48a4d162d6127d189a1ac97794c13","size":400,"annotations":{"io.containerd.image.name":"docker.io/library/alpine:latest","org.opencontainers.image.ref.name":"latest"}}]}

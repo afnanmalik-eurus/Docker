@@ -1,0 +1,29 @@
+services:
+  database:
+    image: mongo:3
+    container_name: mongo
+    ports:
+      - 27017:27017
+  
+  web:
+    image: node:latest
+    container_name: web
+    ports:
+      - 3000:3000
+    working_dir: /app
+    volumes:
+      - /home/DockerTasks/DockerTask1:/app
+    command: sh -c " npm install && node server.js"
+    depends_on: 
+      - database
+    environment:
+      - MONGO_IP=database
+
+  curl:
+    image: curlimages/curl
+    container_name: curl
+    depends_on:
+      - web
+      - database
+    entrypoint: ["sh", "-c", "sleep 15 && curl http://web:3000"]
+

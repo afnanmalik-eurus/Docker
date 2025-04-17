@@ -1,0 +1,5 @@
+using docker inspect with type to get exact info 
+
+docker inspect --type=container mycontainer gives info about container
+docker inspect --type=image 
+docker inspect --type=network

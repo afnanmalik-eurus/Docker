@@ -1,0 +1,14 @@
+services:
+  ping:
+    image: alpine
+    volumes:
+      - /home/DockerTasks/DockerTask13:/shared
+    command: sh /shared/ping.sh
+
+  pong:
+    image: alpine
+    volumes:
+      - /home/DockerTasks/DockerTask13:/shared
+    command: sh /shared/pong.sh
+
+

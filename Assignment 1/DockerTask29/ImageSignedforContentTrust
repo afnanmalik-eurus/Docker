@@ -1,0 +1,2 @@
+DOCKER_CONTENT_TRUST=1 while pulling this image
+

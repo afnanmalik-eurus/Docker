@@ -1,0 +1,9 @@
+Copy file from host to container in running container 
+
+docker cp myscript.sh mycontainer:/tmp
+
+Copy file from container to host 
+
+docker cp mycontainer:/tmp/myscript.sh ./myscript.sh
+
+

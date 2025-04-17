@@ -1,0 +1,5 @@
+when running any image which do not contain CMD Entrypoint at startup error will occour no command specified
+
+in alpine image there is not entrypoint command true can be used as empty 
+
+in ubuntu there is commadn of bash or sh 

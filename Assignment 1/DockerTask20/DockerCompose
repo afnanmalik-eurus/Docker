@@ -1,0 +1,4 @@
+Can a local docker-composer service container connect to a container running in another cluster?
+
+no docker compose container can't directly coonect or communicate with containers that are preset in other cluster 
+becase docker-compose runs on a single host with shared network so all container in same network can connect and communicate

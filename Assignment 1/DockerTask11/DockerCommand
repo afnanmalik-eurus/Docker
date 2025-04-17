@@ -1,0 +1,3 @@
+cat /etc/hosts
+
+docker run alpine cat /etc/hosts
